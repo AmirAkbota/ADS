@@ -198,19 +198,23 @@ import java.util.Scanner;
 }*/
 //Task10
 /*public class Main {
-    public static int gcd(int s, int t) {
-        if (t == 0) {
-            return s;
+    public static int getGcd(int n1, int n2) {
+        if (n2 == 0) {
+            return n1;
         }
-        return gcd(t, s % t);
+        return getGcd(n2, n1 % n2);
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter two numbers: ");
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
+        System.out.print("Enter first number: ");
+        int num1 = sc.nextInt();
 
-        System.out.println("GCD is: " + gcd(a, b));
+        System.out.print("Enter second number: ");
+        int num2 = sc.nextInt();
+
+        int answer = getGcd(num1, num2);
+
+        System.out.println("GCD result = " + answer);
     }
 }*/

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 //Task1
 /* public class Main {
     public static void DigitsOfNumber(int n) {
